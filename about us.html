@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+h1{
+   text-shadow:3px 2px #999999;
+   } 
+body{
+  background-color:#ff9999;
+    }
+.sidenav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#111;
+  overflow-x:hidden;
+  transition:0.5s;
+  padding-top:60px;  
+}  
+.sidenav a{
+  padding:8px 8px 8px 32px;
+  text-decoration:none;
+  font-size:25px;
+  color:#818181;
+  display:block;
+  transition:0.3s;
+}
+.sidenav a:hover{
+  color:#f1f1f1;
+}
+.sidenav  .closebtn{
+  position:absolute;
+  top:0;
+  right:25px;
+  font-size:36px;
+  margin-left:50px;
+}
+#main{
+ transition:margin-left .5s;
+ padding:16px;
+}
+@media  screen and (max height:450px)
+{
+ .sidenav {padding-top:15px;}
+ .sidenav a {font-size:18px;}
+}
+</style>
+</head>
+<body>
+<div id="  mySidenav"    class="  sidenav"  >
+<a href="  javascript:void(0)"    class="  closebtn"    onclick="  closeNav()"  >&times;</a>
+<a href="  index.html"  ><i>HOME</i></a>
+<a href="  about us.html"  ><i>ABOUT US</i></a>
+<a href="  home.html"  ><i>CATEGORIES</i></a>
+<a href="  offerzone.html"  ><i>OFFERS</i></a>
+<a href="  login.html"  ><i>LOGIN</i></a>
+</div>
+<h1 align="  center"  ><i>ABOUT US</i></h1>
+<div id="  main"  >
+<span style="  font-size:30px;cursor:pointer"    onclick="  openNav()"  >&#9776; OPEN</span>
+</div>
+<script>
+function openNav()
+{
+ document.getElementById("  mySidenav"  ).style.width="  250px"  ;
+ document.getElementById("  main"  ).style.marginLeft="  250px"  ;
+}
+function closeNav()
+{
+ document.getElementById("  mySidenav"  ).style.width="  0"  ;
+ document.getElementById("  main"  ).style.marginLeft="  0"  ;
+}
+</script>
+<h2 align="  left"  ><p><b><i>BookShop is a design-minded,multi-disciplinary brand offering objects,events and experiences related to books and reading.</i></b></p></h2>
+<h2 align="  left"  ><p><b><i>Some people like to read on a screen.Other people need the variety and artistry,the sight,smell and the feel of actual books.They love seeing them on their shelves;they love having shelves for them.</i></b></p></h2>
+<h2 align="  left"  ><p><b><i>They love taking them along when they leave the house and stacking them by their bedsides.They love finding old letters and bookmarks in them.They like remembering where they bought them or who they received them from.</i></b></p></h2>
+<h2 align="  left"  ><p><b><i>They want to read in a way that offers a rich experience,more than the words only:the full offering of a book.They are particular about covers,they want to surround themselves with the poetry of good design.</i></b></p></h2>
+<h2 align="  left"  ><p><b><i>They can't pass a bookstore without going in and getting something,they keep a library card and use it.</i></b></p></h2>
+<h2 align="  left"  ><p><b><i>They are allergic to cheep bestsellers;they delight in the out-of-the-way and the rare,the well-made and the hard-to-accomplish.They take care of their books;they know a book is only theirs until it passes on to someone else.They are good stewards of a timeless object.</i></b></p></h2>
+<h2 align="  left"  ><p><b><i>These are the people we're working for.</i></b></p></h2>
+</body>
+</html>
+

@@ -1,0 +1,90 @@
+<html>
+<head>
+<style>
+h1{
+     text-shadow:3px 2px #999999; 
+    }
+body{
+   background-color:#ff9999;
+   }
+.overlay{
+     height:100%;
+    width:0;
+    position: fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color:black;
+    background-color:#000000;
+    overflow-x:hidden;
+    transition:0.5s;
+    }
+.overlay-content{
+    position:relative;
+    top:25%;
+    width:100%;
+    text-align:center;
+   margin-top:30px;
+   }
+.overlay a{
+   padding:8px;
+   text-decoration:none;
+   font-size:36px;
+   color:#818181;
+   display:block;
+   transition:0.3s;
+   }
+.overlay a:hover, .overlay a:focus
+{
+ color:#f1f1f1;
+}
+.overlay  .closebtn{
+   position:absolute;
+   top:20px;
+   right:45px;
+   font-size:60px;
+  }
+@media screen and (max-height:450px)
+{
+ .overlay a {font-size:20px}
+ .overlay  .closebtn{
+  font-size:40px;
+  top:15px;
+  right:35px;
+  }
+}
+</style>
+</head>
+<body>
+<div id="  myNav"    class="   overlay"   >
+<a href="  javascript:void(0)"    class="  closebtn"    onclick="  closeNav()"  >&times;</a>
+<div class="  overlay-content"  >
+<a href="  index.html"  ><i>HOME</i></a>
+<a href="  drama.html"  ><i>DRAMA</i></a>
+<a href="  history.html"  ><i>HISTORY</i></a>
+<a href="  literature.html"  ><i>LITERATURE</i></a>
+<a href="  love.html"  ><i>LOVE</i></a>
+<a href="  novel.html"  ><i>NOVEL</i></a>
+<a href="  thriller.html"  ><i>THRILLER</i></a>
+</div></div>
+<h1><i>SHOP BY CATEGORIES</i></h1>
+<span style="  font-size:30px;cursor:pointer"    onclick="  openNav()"   >&#9776;  OPEN</span>
+<script>
+function openNav(){
+document.getElementById("  myNav"  ).style.width="  100%"  ;
+}
+function closeNav(){
+document.getElementById("  myNav"  ).style.width="  0%"  ;
+}
+</script>
+<h2><i>Drama books has full intensity,conflicts and emotion,these drama books are worth of being staged.Its's time to delve into the world of drama.</i></h2>
+<h2><i>In history book there are so many great quotes from more knowledge people.you learn about where the world we live in now came from,what is good about communism.It influences your thinking.It makes you more knowledgeble.</i></h2>
+<h2><i>Reading literature might appear to be time-waster,but literature lets you access and experience a range of emotions and events that would take countless lifetimes to encounter.Literature gives you the chance to see things from someone else's point of view,which is the best way to develop empathy for others.Fear of failure can be written for everyone,but when you read stories of the ups and downs of different character,you can help show yourself that it's okay to fail.you can see that failure is a part of life.</i></h2>
+<h2><i>Love story books take us into their word and sometimes they make us fall in love.Get lost in one of these vibrant and memorable love stories.</i></h2>
+<h2><i>While reading novels ypu have to make sense of author's words and draw pictures in your head about the scenes mentioned in the novel.This enhances the comprehension ability and opens up the mind.These novels will have an array of emotions expressed and more often that not we are going through a similar phase in life.So we find solace in the fact that someone acknowledges our state of mind and we are not the first ones to experience the same!</i></h2>
+<h2><i></i></h2>
+</body>
+</html>
+
+
+

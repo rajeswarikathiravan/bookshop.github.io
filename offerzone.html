@@ -1,0 +1,122 @@
+<html>
+<head>
+<style>
+h1{
+  text-shadow:3px 2px #999999;
+  }
+body{
+  background-color:#ff9999;
+  }
+.sidenav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#111;
+  overflow-x:hidden;
+  transition:0.5s;
+  padding-top:60px;  
+}  
+.sidenav a{
+  padding:8px 8px 8px 32px;
+  text-decoration:none;
+  font-size:25px;
+  color:#818181;
+  display:block;
+  transition:0.3s;
+}
+.sidenav a:hover{
+  color:#f1f1f1;
+}
+.sidenav  .closebtn{
+  position:absolute;
+  top:0;
+  right:25px;
+  font-size:36px;
+  margin-left:50px;
+}
+#main{
+ transition:margin-left .5s;
+ padding:16px;
+}
+@media  screen and (max height:450px)
+{
+ .sidenav {padding-top:15px;}
+ .sidenav a {font-size:18px;}
+}
+img{
+   display:block;
+   margin-left:auto;
+   margin-right:auto;
+   }
+*{
+   box-sizing:border:box;
+  }
+.row{
+   display:flex;
+      }
+.column{
+   flex:33.33%;
+   padding:5px;
+  }
+</style>
+</head>
+<body>
+<div id="  mySidenav"    class="  sidenav"  >
+<a href="  javascript:void(0)"    class="  closebtn"    onclick="  closeNav()"  >&times;</a>
+<a href="  index.html"  ><i>HOME</i></a>
+<a href="  home.html"  ><i>CATEGORIES</i></a>
+<a href="  about us.html"  ><i>ABOUT US</i></a>
+<a href="  offerzone.html"  ><i>OFFERS</i></a>
+<a href="  login.html"  ><i>LOGIN</i></a>
+</div>
+<h1 align="  center"  >OFFERS FOR YOU</h1>
+<div id="  main"  >
+<span style="  font-size:30px;cursor:pointer"    onclick="  openNav()"  >&#9776; OPEN</span>
+</div>
+<script>
+function openNav()
+{
+ document.getElementById("  mySidenav"  ).style.width="  250px"  ;
+ document.getElementById("  main"  ).style.marginLeft="  250px"  ;
+}
+function closeNav()
+{
+ document.getElementById("  mySidenav"  ).style.width="  0"  ;
+ document.getElementById("  main"  ).style.marginLeft="  0"  ;
+}
+</script>
+<div class="  row"  >
+<div class="  column"  >
+<img src="  nation under feet.jpg"   width="  500"    height="  500"  >
+<h2 align="  center"  ><i><b>Min.15%+Extra 7%Offer</b></i></h2>
+</div>
+<div class="  column"  >
+<img src="  not a story.jpeg"   width="  500"    height="  500"  >
+<h2 align="  center"  ><i><b>Upto 14%+Extra 10%Offer</b></i></h2>
+</div>
+</div>
+<div class="  row"  >
+<div class="  column"  >
+<img src="  love emily.jpeg"   width="  500"    height="  500"  >
+<h2 align="  center"  ><i><b>Upto 10%+Extra 5%Offer</b></i></h2>
+</div>
+<div class="  column"  >
+<img src="  officer and spy.jpeg"   width="  500"    height="  500"  >
+<h2 align="  center"  ><i><b>Upto 12%+Extra 8%Offer</b></i></h2>
+</div>
+</div>
+<div class="  row"  >
+<div class="  column"  >
+<img src="  drama9.jpeg"   width="  500"    height="  500"  >
+<h2 align="  center"  ><i><b>Upto 10% Offer</b></i></h2>
+</div>
+<div class="  column"  >
+<img src="  novel9.jpeg"   width="  500"    height="  500"  >
+<h2 align="  center"  ><i><b>Upto 8%Offer</b></i></h2>
+</div>
+</div>
+</body>
+</html>
